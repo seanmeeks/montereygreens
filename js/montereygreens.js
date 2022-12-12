@@ -2,40 +2,37 @@ document.addEventListener("DOMContentLoaded", () => {
   let state = 'before';
 
   let montereyPine = document.querySelector('.montereypine');
-  let showText = (e)=> {
+  let showText = (e)=> { //function to show the div
 
     console.log(e);
-    let beachStrawberry = document.querySelector(".beachstrawberry");
+    let beachStrawberry = document.querySelector(".beachstrawberry"); //selects the beach strawberry div in the html
     let coyoteBrush = document.querySelector(".coyotebrush");
-    let mpTitle = document.querySelector(".mptitle");
-    let mpText = document.querySelector(".mpfacts");
-    if (state === 'before') {
+    let mpTitle = document.querySelector(".mptitle"); //selects the title of the plant
+    let mpText = document.querySelector(".mpfacts"); //selects the paragraph text of the plant
+    if (state === 'before') { //event occurs if the page is in the original state
 
       console.log(mpText);
-      mpText.innerHTML = "Can peek to 200ft tall (about 18 stories)! <br> Has a life spine to 80-90 years!";
-
-      //give paragraphs a class
-      // use querySelectorAll to get everything in the array
+      mpText.innerHTML = "Can peek to 200ft tall (about 18 stories)! <br> Has a life spine to 80-90 years!"; //changes the paragraph text under the plant
 
       console.log(mpTitle);
-      mpTitle.textContent = "MONTEREY PINE";
+      mpTitle.textContent = "MONTEREY PINE"; //changes the title above the plant
 
-      document.querySelector(".pine1").src="img/picture2.jpeg";
+      document.querySelector(".pine1").src="img/picture2.jpeg"; //changes the plant image
 
-      coyoteBrush.style.display = 'none';
+      coyoteBrush.style.display = 'none'; //removes the div from the display
 
       console.log(coyoteBrush);
-      beachStrawberry.style.display = 'none';
+      beachStrawberry.style.display = 'none'; //removes the div from the display
       console.log(beachStrawberry);
-      state = 'after';
+      state = 'after'; //page updates after the plant image is clicked
     } else {
-      state = 'before';
+      state = 'before'; //page goes back to it's original state
       console.log('show the hidden plants');
-      document.querySelector(".pine1").src="img/picture1.jpeg";
-      beachStrawberry.style.display = 'block';
-      coyoteBrush.style.display = 'block';
-      mpText.textContent = '';
-      mpTitle.textContent = '';
+      document.querySelector(".pine1").src="img/picture1.jpeg"; //changes the plant image back to the previous
+      beachStrawberry.style.display = 'block'; //shows the div on the display
+      coyoteBrush.style.display = 'block'; //shows the div on the display
+      mpText.textContent = ''; //removes the paragraph text from the display
+      mpTitle.textContent = ''; //removes the title text from the display
     }
   }
 
@@ -105,8 +102,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  beachStrawberry.addEventListener('click',showbsText);
-  coyoteBrush.addEventListener('click',showcbText);
-  montereyPine.addEventListener('click',showText);
+  beachStrawberry.addEventListener('click',showbsText); //causes the event to occur when the plant divs are clicked
+  coyoteBrush.addEventListener('click',showcbText); //causes the event to occur when the plant divs are clicked
+  montereyPine.addEventListener('click',showText); //causes the event to occur when the plant divs are clicked
 
 })
