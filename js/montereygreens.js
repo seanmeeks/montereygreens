@@ -102,6 +102,60 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  let mpHover = (e) => {
+    let montereyPine = document.querySelector('.montereypine');
+    let coyoteBrush = document.querySelector('.cb1');
+    let beachStrawberry = document.querySelector('.bs1');
+    coyoteBrush.classList.add('endAnimation', 'fadeAnimation');
+    beachStrawberry.classList.add('endAnimation', 'fadeAnimation');
+  }
+
+  let cbHover = (e) => {
+    let montereyPine = document.querySelector('.pine1');
+    let coyoteBrush = document.querySelector('.coyotebrush');
+    let beachStrawberry = document.querySelector('.bs1');
+    montereyPine.classList.add('endAnimation', 'fadeAnimation');
+    beachStrawberry.classList.add('endAnimation', 'fadeAnimation');
+  }
+
+  let bsHover = (e) => {
+    let montereyPine = document.querySelector('.pine1');
+    let coyoteBrush = document.querySelector('.cb1');
+    let beachStrawberry = document.querySelector('.beachstrawberry');
+    coyoteBrush.classList.add('endAnimation', 'fadeAnimation');
+    montereyPine.classList.add('endAnimation', 'fadeAnimation');
+  }
+
+  let mpOut = (e) => {
+    let montereyPine = document.querySelector('.montereypine');
+    let coyoteBrush = document.querySelector('.cb1');
+    let beachStrawberry = document.querySelector('.bs1');
+    coyoteBrush.classList.remove('endAnimation', 'fadeAnimation');
+    beachStrawberry.classList.remove('endAnimation', 'fadeAnimation');
+  }
+
+  let cbOut = (e) => {
+    let montereyPine = document.querySelector('.pine1');
+    let coyoteBrush = document.querySelector('.coyotebrush');
+    let beachStrawberry = document.querySelector('.bs1');
+    montereyPine.classList.remove('endAnimation', 'fadeAnimation');
+    beachStrawberry.classList.remove('endAnimation', 'fadeAnimation');
+  }
+
+  let bsOut = (e) => {
+    let montereyPine = document.querySelector('.pine1');
+    let coyoteBrush = document.querySelector('.cb1');
+    let beachStrawberry = document.querySelector('.beachstrawberry');
+    coyoteBrush.classList.remove('endAnimation', 'fadeAnimation');
+    montereyPine.classList.remove('endAnimation', 'fadeAnimation');
+  }
+
+  montereyPine.addEventListener('mouseover',mpHover);
+  montereyPine.addEventListener('mouseout',mpOut);
+  coyoteBrush.addEventListener('mouseover',cbHover);
+  coyoteBrush.addEventListener('mouseout',cbOut);
+  beachStrawberry.addEventListener('mouseover',bsHover);
+  beachStrawberry.addEventListener('mouseout',bsOut);
   beachStrawberry.addEventListener('click',showbsText); //causes the event to occur when the plant divs are clicked
   coyoteBrush.addEventListener('click',showcbText); //causes the event to occur when the plant divs are clicked
   montereyPine.addEventListener('click',showText); //causes the event to occur when the plant divs are clicked
