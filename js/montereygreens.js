@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (state === 'before') {
 
       console.log(cbText);
-      cbText.innerHTML = "Live up to 10-15 years! <br> Moderately fire resistant when young and green!";
+      cbText.innerHTML = "Can live up to 10-15 years! <br> Moderately fire resistant when young and green!";
 
       console.log(cbTitle);
       cbTitle.textContent = "COYOTE BRUSH";

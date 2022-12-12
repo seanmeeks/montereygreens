@@ -3,6 +3,10 @@
   opacity: 1.0;
 }
 
+.pine1:hover, .cb1:hover, .bs1:hover {
+  width: 350px;
+}
+
 .fadeAnimation {
 	transition-property: opacity;
 	transition-duration: 1s;
