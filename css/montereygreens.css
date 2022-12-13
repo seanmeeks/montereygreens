@@ -1,11 +1,10 @@
-html, body
-{
-  background-color: ivory;
-}
-
-.pine1 {
+.pine1, .cb1, .bs1 {
   width: 250px;
   opacity: 1.0;
+}
+
+body {
+  background-color: ivory;
 }
 
 .pine1:hover, .cb1:hover, .bs1:hover {
