@@ -5,6 +5,20 @@ html, body
 
 .pine1 {
   width: 250px;
+  opacity: 1.0;
+}
+
+.pine1:hover, .cb1:hover, .bs1:hover {
+  width: 350px;
+}
+
+.fadeAnimation {
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.endAnimation {
+  opacity: 0;
 }
 
 
@@ -12,27 +26,37 @@ html, body
   float: left;
   padding: 10px;
   text-align: center;
+  margin: auto;
 }
 
 .coyotebrush {
   float: left;
   padding: 10px;
   text-align: center;
+  margin: auto;
 }
 
 .beachstrawberry {
   float: left;
   padding: 10px;
   text-align: center;
+  margin: auto;
 }
 
 .montereyg {
-  margin: 0 auto;
   overflow: hidden;
   width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 5%;
 }
 
 #mgreens {
   width: 100%;
   overflow: hidden;
+}
+
+.montereygreens {
+  text-align: center;
 }
