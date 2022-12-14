@@ -5,7 +5,8 @@
 
 html, body {
   background-image: url("../img/gardenB.jpeg");
-  min-width: 1024px;
+  width: auto;
+  height: auto;
 }
 
 #sidebar {
@@ -33,7 +34,18 @@ h3 {
   font-family: sans-serif;
   color: green;
 }
+.montereypine, .coyotebrush, .beachstrawberry {
+word-spacing: 10px;
+color: pink;
+text-shadow: 0 0 5px #fe923a;
+font-size: 40px;
+font-family: sans-serif;
+}
 
+.montereypine, .coyotebrush, .beachstrawberry{
+  background: ivory;
+  border-radius: 5px;
+}
 .pine1:hover, .cb1:hover, .bs1:hover {
   width: 350px;
 }
